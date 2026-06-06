@@ -1,0 +1,15 @@
+networks:
+  pistack:
+    driver: bridge
+
+services:
+  vitalcore:
+    image: nginx:alpine
+    container_name: vitalcore
+    restart: unless-stopped
+    networks:
+      - pistack
+    ports:
+      - "8090:80"
+    volumes:
+      - /home/pi/pistack/vitalcore:/usr/share/nginx/html:ro
