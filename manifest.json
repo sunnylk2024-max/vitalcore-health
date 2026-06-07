@@ -2,18 +2,27 @@
   "name": "VitalCore — Health Command Center",
   "short_name": "VitalCore",
   "description": "Personal health tracking: supplements, workouts, nutrition, habits",
-  "start_url": "/",
+  "start_url": "/vitalcore-health/",
+  "scope": "/vitalcore-health/",
   "display": "standalone",
   "background_color": "#0a0a0f",
   "theme_color": "#0a0a0f",
   "orientation": "portrait",
+  "lang": "en-IE",
+  "categories": ["health", "fitness", "lifestyle"],
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='24' fill='%230a0a0f'/><text y='130' x='96' font-size='110' text-anchor='middle'>⚡</text></svg>",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml"
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
-  "categories": ["health", "fitness", "lifestyle"],
   "screenshots": []
 }

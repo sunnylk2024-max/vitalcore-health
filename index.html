@@ -1757,7 +1757,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   loadProfile();
   scheduleNotifications();
   renderSleepHistory();
-  if('serviceWorker'in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
+  if('serviceWorker'in navigator) navigator.serviceWorker.register('/vitalcore-health/sw.js').catch(()=>{});
   setInterval(()=>{ if(currentPage===0) updateDashboard(); renderSchedule(); },60000);
 });
 </script>
